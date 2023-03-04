@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>List of Countries</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="loader">
+				<img src="https://cdn.glitch.global/50359b3f-5c11-43be-90d4-34637fb7d9b3/loader.gif?v=1669938776277" alt="loader">
+			</div>
+			<header>
+				<h2 class="header">Where in the World?</h2>
+				<div>
+					<button class="darkMode">Dark / Light</button>
+				</div>
+			</header>
+			<main> 
+				<div class="search-container">
+				<input type="text" id="search" spellcheck="false" placeholder="Country name...">
+				<button id="btn">Search</button>
+				<div class="filter-container">
+					<div name="" id="filter" class="dropMenu">
+						<p class="dropDown">Filter by Region</p>
+						<button class="dropDownBtn">↓</button>
+					</div>
+					<div class="drop hideDropDown">
+						<p class="region">All</p>
+						<p class="region">Africa</p>
+						<p class="region">Americas</p>
+						<p class="region">Asia</p>
+						<p class="region">Europe</p>
+						<p class="region">Oceania</p>
+					</div>
+				</div>
+			</div>
+			<div class="countries">
+			</div>
+			</main>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
